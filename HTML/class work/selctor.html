@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+            background-color: aqua;
+            scale: 2px;
+        }
+        button:active{
+            scale: 90%;
+        }
+        li:first-child{
+            color: brown;
+        }
+        .card{
+            position: relative;
+            width: 100px;
+            height: 150px;
+            border-radius: 12px;
+            background-color: blanchedalmond;
+            border: 2px solid goldenrod;
+        }
+        .card::after{
+            content: "best seller";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 12px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+    <div class="card"></div>
+</body>
+</html>
