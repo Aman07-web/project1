@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card{
+         height: 450px;
+         width: 350px;
+         perspective: 1000px;
+      }
+      .cardFirst {
+        position: relative;
+        border-radius: 20px;
+        height: 100%;
+        /* border: 1px solid black; */
+        width: 100%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .cardFirst img {
+        width: 100%;
+        height: 50%;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .cardFirst h2 {
+        margin-top: 15px;
+        padding-left: 20px;
+      }
+      .cardFirst p {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .cardFirst:hover {
+        transform: rotateY(180deg);
+        transition: 2s;
+        /* height: 10px;
+            width: 10px; */
+      }
+      .cardFirst {
+        backface-visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+
+        <div class="cardFirst">
+          <img src="cricket.jpeg" alt="cricket image" />
+          <h2>Indian cricket Team</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            placeat praesentium? Quod quisquam laudantium veritatis repellendus
+            sapiente. Ea molestias qui facere reprehenderit a, recusandae
+            incidunt neque rem quibusdam! Nam ratione nisi blanditiis
+            consequuntur molestias? Vero ducimus cumque minima velit aliquam?
+          </p>
+        </div>
+
+        <div class="cardBack">
+            <h1>Back Face</h1>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
